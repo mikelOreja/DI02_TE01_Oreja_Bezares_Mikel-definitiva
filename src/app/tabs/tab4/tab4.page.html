@@ -1,0 +1,22 @@
+<headerTab tituloTab="Tab 4"></headerTab>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">tab4</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <ion-item class="contenedor" >
+    <ion-label> Adivina un numero del 1 al 100 </ion-label>
+    <ion-button class="boton-azul" (click)="Comprobar()" defaultHref="/" mode="ios" text="Comprobar">Comprobar</ion-button>
+  </ion-item>
+  <ion-item>
+    <ion-label> Numero: </ion-label>
+    <ion-input type="number" placeholder="Introduce un numero del 1 al 100" [(ngModel)]="numeroUsuario"></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-label>{{resultado}}</ion-label>
+  </ion-item>
+
+</ion-content>
